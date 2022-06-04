@@ -1,7 +1,7 @@
 # Site Build Settings
 
 # jekyll-paginate configuration
-paginate:            5
+paginate:            10
 
 # Build settings
 markdown:            kramdown
@@ -10,8 +10,8 @@ permalink:           /:title
 plugins:             [jekyll-paginate, jekyll-sitemap, jekyll-feed, jekyll-seo-tag]
 
 # Customise atom feed settings (this is where Jekyll-Feed gets configuration information)
-title:		           "해든이는 든든뽀찌"
-description:	       "해든이 육아일기 - 엄마의 사랑뾰쨕"
+title:		           "해든이는 든든뽀쨕"
+description:	       "해든이 육아일기"
 author:              "엄마"
 
 # RSS 2.0 can be used instead of Atom by uncommenting following two lines
