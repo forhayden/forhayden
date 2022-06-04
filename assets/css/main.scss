@@ -1,8 +1,9 @@
 ---
 ---
 
-$base-font-family: 'Roboto', sans-serif;
-$body-font-family: 'Roboto', sans-serif;
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+$base-font-family: "Pretendard";
+$body-font-family: "Pretendard";
 $code-font-family: "Source Code Pro", monospace;
 
 $brand-color: black;
