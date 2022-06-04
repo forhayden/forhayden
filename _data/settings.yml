@@ -7,12 +7,12 @@ disqus:
 google-ID: 'UA-112060364-2'
 
 menu:
-- {name: 'Interesting Facts',  url: 'facts'}
-- {name: 'Learning Resources', url: 'resources'}
-- {name: 'Sample Posts',       url: 'sample-posts'}
-- {name: 'Documentation',      url: 'documentation'}
+# - {name: 'Interesting Facts',  url: 'facts'}
+# - {name: 'Learning Resources', url: 'resources'}
+# - {name: 'Sample Posts',       url: 'sample-posts'}
+# - {name: 'Documentation',      url: 'documentation'}
 - {name: 'About',              url: 'about'}
-- {name: 'Contact',            url: 'contact'}
+# - {name: 'Contact',            url: 'contact'}
 
 # Available social icons are powered by Font Awesome, so you can use any icon that they offer
 social:
@@ -28,8 +28,8 @@ pagination:
   next_page: 'Newer'
   previous_page: 'Older'
 
-sharing_button_prompt: 'Feel free to share!'
+sharing_button_prompt: '해든이 공유하기!'
 
-related_posts: 'You may also enjoy...'
+related_posts: '든든 뽀찌 더보기...'
 
 post_date_prefix: 'Written on'
