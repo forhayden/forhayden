@@ -54,8 +54,8 @@ permalink: /rht
     video.src = srcs[parseInt(Math.random() * srcLength)]
     video.muted = true
     video.crossOrigin = "anonymous"
-    video.style.width = "-webkit-fill-available"
-    video.style.height = "-webkit-fill-available"
+    video.style.width = "400px"// "-webkit-fill-available"
+    video.style.height = "400px"// "-webkit-fill-available"
     video.style.position = "absolute"
     video.playsInline = true
 
