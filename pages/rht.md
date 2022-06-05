@@ -57,7 +57,7 @@ permalink: /rht
     video.style.width = "400px"// "-webkit-fill-available"
     video.style.height = "400px"// "-webkit-fill-available"
     video.style.position = "absolute"
-    video.playsInline = true
+    // video.playsInline = true
 
     video.addEventListener("ended", ()=> Play())
     video.play().then(()=> loading.style.display = "none")
