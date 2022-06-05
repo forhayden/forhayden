@@ -20,7 +20,7 @@ permalink: /rht
     container.style.background = "red"
     container.style.margin = "0px"
     container.style.width = "-webkit-fill-available"
-    container.style.height = "500px"
+    container.style.height = "600px"
     container.style.position = "relative"
 
     container.appendChild(button)
@@ -43,7 +43,7 @@ permalink: /rht
 
     loading.style.position = "absolute"
     loading.innerText = "해두니 달려오는 중..."
-    loading.style.width = "400px"
+    loading.style.width = "-webkit-fill-available"
     loading.style.height = buttonSize
     loading.style.zIndex = "9"
     loading.style.color = "white"
@@ -54,9 +54,11 @@ permalink: /rht
     video.src = srcs[parseInt(Math.random() * srcLength)]
     video.muted = true
     video.crossOrigin = "anonymous"
-    video.style.width = "400px"
-    video.style.height = "400px"
+    video.style.width = "-webkit-fill-available"
+    video.style.height = "600px"
     video.style.position = "absolute"
+    video.playsInline = true
+    video.setAttribute("playsinline","null")
 
     video.addEventListener("ended", ()=> Play())
     video.play().then(()=> loading.style.display = "none")
