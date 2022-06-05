@@ -11,8 +11,9 @@ menu:
 # - {name: 'Learning Resources', url: 'resources'}
 # - {name: 'Sample Posts',       url: 'sample-posts'}
 # - {name: 'Documentation',      url: 'documentation'}
-- {name: 'About',              url: 'about'}
+# - {name: 'About',              url: 'about'}
 # - {name: 'Contact',            url: 'contact'}
+- {name: '랜덤해둔티비',              url: 'rht'}
 
 # Available social icons are powered by Font Awesome, so you can use any icon that they offer
 social:
