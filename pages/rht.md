@@ -8,6 +8,7 @@ permalink: /rht
     const container = document.createElement("div")
     const button = document.createElement("div")
     const video = document.createElement("video")
+    const loading = document.createElement("p")
 
     const srcs = []
     for(let i=1; i<19; i++){
@@ -24,6 +25,7 @@ permalink: /rht
 
     container.appendChild(button)
     container.appendChild(video)
+    container.appendChild(loading)
     document.getElementsByClassName("page-content").item(0).appendChild(container)
 
     const buttonSize = "20%"
@@ -37,18 +39,36 @@ permalink: /rht
     button.style.left = "80%"
     button.style.top = "80%"
 
-    button.addEventListener("click", ()=>{
+    button.addEventListener("click", Play)
+
+    loading.style.position = "absolute"
+    loading.innerText = "해두니 달려오는 중..."
+    loading.style.width = "-webkit-fill-available"
+    loading.style.height = buttonSize
+    loading.style.zIndex = "9"
+    loading.style.color = "white"
+    loading.style.top = "45%"
+    loading.style.left = "40%"
+    loading.style.display = "block"
+
+    video.src = srcs[parseInt(Math.random() * srcLength)]
+    video.muted = true
+    video.style.width = "-webkit-fill-available"
+    video.style.height = "-webkit-fill-available"
+    video.style.position = "absolute"
+
+    video.addEventListener("ended", ()=> Play())
+    video.play().then(()=> loading.style.display = "none")
+
+    async function Play(){
+        loading.style.display = "block"
+
         const index = parseInt(Math.random() * srcLength)
 
         video.src = srcs[index]
         video.muted = false
-        video.play()
-    })
+        await video.play()
 
-    video.src = srcs[parseInt(Math.random() * srcLength)]
-    video.muted = true
-    video.autoplay = true
-    video.style.width = "-webkit-fill-available"
-    video.style.height = "-webkit-fill-available"
-    video.style.position = "absolute"
+        loading.style.display = "none"
+    }
 </script>
