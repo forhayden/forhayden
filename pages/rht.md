@@ -17,7 +17,7 @@ permalink: /rht
 
     const srcLength = srcs.length
 
-    container.style.background = "red"
+    container.style.background = "white"
     container.style.margin = "0px"
     container.style.width = "-webkit-fill-available"
     container.style.height = "600px"
