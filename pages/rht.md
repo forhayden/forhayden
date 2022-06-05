@@ -11,7 +11,7 @@ permalink: /rht
 
     const srcs = []
     for(let i=1; i<19; i++){
-        srcs.push(`/assets/video/${i}.mp4`)
+        srcs.push(`/forhayden/assets/video/${i}.mp4`)
     }
 
     const srcLength = srcs.length
@@ -29,7 +29,7 @@ permalink: /rht
     const buttonSize = "20%"
     button.style.width = buttonSize
     button.style.height = buttonSize
-    button.style.backgroundImage = "url(\"/assets/img/button.png\")"
+    button.style.backgroundImage = "url(\"/forhayden/assets/img/button.png\")"
     button.style.backgroundRepeat = "no-repeat"
     button.style.backgroundSize = "100%"
     button.style.zIndex = "9"
@@ -45,7 +45,7 @@ permalink: /rht
         video.play()
     })
 
-    video.src = "/assets/video/1.mp4"
+    video.src = srcs[parseInt(Math.random() * srcLength)]
     video.muted = true
     video.autoplay = true
     video.style.width = "-webkit-fill-available"
